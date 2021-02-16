@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <title>Tennisclub: Den Tennisser</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="/src/main/resources/static/css/css.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
@@ -16,18 +16,18 @@
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
         </label>
-        <img src="images/logo1.png" class="logoTennis">
+        <img src="/src/main/resources/static/images/logo1.png" class="logoTennis">
         <label class="logo">Den Tennisser</label>
         <ul>
-           <li><a class="active" href="/index">Den Tennisser</a></li>
-           <li><a href="/lidmaatschap">Lidmaatschap</a></li>
-           <li><a href="/tennisles">TennisLessen</a></li>
-           <li><a href="/photo">Foto's</a></li>
-           <li><a href="/login">Login</a></li>
-         </ul>
+            <li><a class="active" href="/index">Den Tennisser</a></li>
+            <li><a href="Lidmaatschap.html">Lidmaatschap</a></li>
+            <li><a href="Tennisles.html">TennisLessen</a></li>
+            <li><a href="Photo.html">Foto's</a></li>
+            <li><a href="Login.html">Login</a></li>
+        </ul>
     </nav>
 
-    <img src="images/background.jpg" alt="Tennisveld" class="backgroundles">
+    <img src="/src/main/resources/static/images/background.jpg" alt="Tennisveld" class="backgroundles">
 
     <div class="bg-text">
         <h1 style="font-size:50px">Login</h1>
@@ -37,29 +37,29 @@
     <h1>Login</h1>
 
     <div class="register">
-        <form method="post" th:action= "@{/login}">
+        <form method="post" th:action="@{/login}">
             <div class="container">
                 <label><b>Email</b></label>
-                <input type="text" name = "email">
+                <input type="text" name="email">
                 <label><b>Wachtwoord</b></label>
-                <input type="password" name = "password">
+                <input type="password" name="password">
                 <input type="submit" class="registerbtn" value="login">
             </div>
         </form>
     </div>
-<div class="register">
-    <button class="registerbtn"  onclick="window.location.href='/password'">Wachtwoord Vergeten </button>
-</div>
+    <div class="register">
+        <button class="registerbtn" onclick="window.location.href='ChangePassword.html'">Wachtwoord Vergeten </button>
+    </div>
 
     <br>
     <div class="register">
         <h1>Registreer</h1>
         <p> Ik heb nog geen account en wil er een aanmaken.</p>
-        <button class="registerbtn"  onclick="window.location.href='/registration'">Registreren</button>
+        <button class="registerbtn" onclick="window.location.href='/registration'">Registreren</button>
     </div>
 
     <div class="register">
-        <button class="registerbtn"  onclick="window.location.href='/index'">Terug naar de hoofdpagina </button>
+        <button class="registerbtn" onclick="window.location.href='/index'">Terug naar de hoofdpagina </button>
     </div>
 
 
